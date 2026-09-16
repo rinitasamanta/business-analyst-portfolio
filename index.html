@@ -2,680 +2,548 @@
 <html lang="en">
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
+<meta name="description"
+content="Rinita Samanta - Business Analyst Portfolio">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rinita Samanta | Business Analyst</title>
 
-    <meta name="description"
-        content="Rinita Samanta - Aspiring Business Analyst Portfolio">
+<style>
 
-    <title>Rinita Samanta | Business Analyst Portfolio</title>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #1f2937;
+    line-height: 1.6;
+}
 
-    <style>
+a {
+    text-decoration: none;
+}
 
-        /* =========================
-           GENERAL SETTINGS
-        ========================== */
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+/* NAVIGATION */
 
-        body {
-            <img
-    src="profile.jpg"
-    alt="Rinita Samanta"
-    class="profile-photo"
->
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7f9fc;
-            color: #1f2937;
-            line-height: 1.6;
-        }
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-        a {
-            text-decoration: none;
-        }
+    background: white;
 
+    border-bottom: 1px solid #e5e7eb;
 
-        /* =========================
-           NAVIGATION BAR
-        ========================== */
+    padding: 18px 7%;
 
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-            background: white;
+nav h2 {
+    color: #2563eb;
+}
 
-            border-bottom: 1px solid #e5e7eb;
+nav ul {
+    list-style: none;
 
-            padding: 18px 7%;
+    display: flex;
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    gap: 22px;
+}
 
-        nav h2 {
-            color: #2563eb;
-            font-size: 22px;
-        }
+nav ul li a {
+    color: #374151;
 
-        nav ul {
-            list-style: none;
+    font-weight: 600;
+}
 
-            display: flex;
+nav ul li a:hover {
+    color: #2563eb;
+}
 
-            gap: 25px;
-        }
 
-        nav ul li a {
-            color: #374151;
+/* HERO */
 
-            font-weight: 600;
+.hero {
+    min-height: 92vh;
 
-            transition: 0.3s;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        nav ul li a:hover {
-            color: #2563eb;
-        }
+    text-align: center;
 
+    padding: 60px 20px;
 
-        /* =========================
-           HERO SECTION
-        ========================== */
+    background: linear-gradient(
+        135deg,
+        #eef4ff,
+        #ffffff
+    );
+}
 
-        .hero {
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+}
 
-            min-height: 92vh;
 
-            display: flex;
+/* PROFILE PHOTO */
 
-            justify-content: center;
+.profile-photo {
+    width: 190px;
+    height: 190px;
 
-            align-items: center;
+    object-fit: cover;
 
-            text-align: center;
+    border-radius: 50%;
 
-            padding: 60px 20px;
+    border: 6px solid white;
 
-            background:
-                linear-gradient(
-                    135deg,
-                    #eef4ff,
-                    #ffffff
-                );
-        }
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.15);
 
-        .hero-content {
+    margin-bottom: 22px;
+}
 
-            max-width: 850px;
 
-            margin: auto;
-        }
+/* OPEN TO WORK */
 
+.open-work {
+    display: inline-block;
 
-        /* PROFILE PHOTO */
+    background: #dcfce7;
 
-        .profile-photo {
+    color: #166534;
 
-            width: 190px;
+    padding: 9px 20px;
 
-            height: 190px;
+    border-radius: 30px;
 
-            object-fit: cover;
+    font-weight: bold;
 
-            border-radius: 50%;
+    margin-bottom: 18px;
+}
 
-            border: 6px solid white;
 
-            box-shadow:
-                0 10px 30px rgba(0,0,0,0.15);
+/* HERO TEXT */
 
-            margin-bottom: 25px;
-        }
+.hero h1 {
+    font-size: 52px;
 
+    color: #111827;
 
-        /* OPEN TO WORK */
+    margin-bottom: 5px;
+}
 
-        .open-work {
+.hero h2 {
+    font-size: 28px;
 
-            display: inline-block;
+    color: #2563eb;
 
-            background: #dcfce7;
+    margin-bottom: 15px;
+}
 
-            color: #166534;
+.subtitle {
+    font-size: 19px;
 
-            padding: 9px 20px;
+    color: #4b5563;
 
-            border-radius: 30px;
+    margin-bottom: 20px;
+}
 
-            font-weight: bold;
+.hero-description {
+    max-width: 720px;
 
-            margin-bottom: 18px;
-        }
+    margin: auto;
 
+    font-size: 17px;
 
-        /* NAME */
+    color: #4b5563;
 
-        .hero h1 {
+    margin-bottom: 25px;
+}
 
-            font-size: 52px;
 
-            color: #111827;
+/* BUTTONS */
 
-            margin-bottom: 8px;
-        }
+.buttons {
+    margin-top: 20px;
+}
 
+.btn {
+    display: inline-block;
 
-        /* JOB TITLE */
+    padding: 12px 24px;
 
-        .hero h2 {
+    margin: 6px;
 
-            font-size: 28px;
+    border-radius: 8px;
 
-            color: #2563eb;
+    font-weight: bold;
 
-            margin-bottom: 15px;
-        }
+    background: #2563eb;
 
+    color: white;
 
-        .hero .subtitle {
+    transition: 0.3s;
+}
 
-            font-size: 19px;
+.btn:hover {
+    background: #1d4ed8;
 
-            color: #4b5563;
+    transform: translateY(-2px);
+}
 
-            margin-bottom: 20px;
-        }
+.btn.secondary {
+    background: white;
 
+    color: #2563eb;
 
-        .hero-description {
+    border: 2px solid #2563eb;
+}
 
-            max-width: 720px;
+.btn.secondary:hover {
+    background: #eef4ff;
+}
 
-            margin: auto;
 
-            font-size: 17px;
+/* SECTIONS */
 
-            color: #4b5563;
+section {
+    padding: 75px 7%;
+}
 
-            margin-bottom: 25px;
-        }
+section h2 {
+    text-align: center;
 
+    font-size: 34px;
 
-        /* BUTTONS */
+    margin-bottom: 40px;
 
-        .buttons {
+    color: #111827;
+}
 
-            margin-top: 20px;
-        }
 
-        .btn {
+/* ABOUT */
 
-            display: inline-block;
+.about {
+    max-width: 850px;
 
-            padding: 12px 25px;
+    margin: auto;
 
-            margin: 6px;
+    text-align: center;
 
-            border-radius: 8px;
+    font-size: 18px;
 
-            font-weight: bold;
+    color: #4b5563;
+}
 
-            background: #2563eb;
 
-            color: white;
+/* SKILLS */
 
-            transition: 0.3s;
-        }
+.skills {
+    max-width: 950px;
 
-        .btn:hover {
+    margin: auto;
 
-            transform: translateY(-2px);
+    display: flex;
 
-            background: #1d4ed8;
-        }
+    flex-wrap: wrap;
 
-        .btn.secondary {
+    justify-content: center;
 
-            background: white;
+    gap: 12px;
+}
 
-            color: #2563eb;
+.skill {
+    background: white;
 
-            border: 2px solid #2563eb;
-        }
+    border: 1px solid #dbe3ef;
 
-        .btn.secondary:hover {
+    padding: 12px 18px;
 
-            background: #eef4ff;
-        }
+    border-radius: 25px;
 
+    font-weight: 600;
 
-        /* =========================
-           SECTION SETTINGS
-        ========================== */
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.04);
+}
 
-        section {
 
-            padding: 75px 7%;
-        }
+/* EXPERIENCE */
 
-        section h2 {
+.experience-container {
+    max-width: 850px;
 
-            text-align: center;
+    margin: auto;
+}
 
-            font-size: 34px;
+.experience-card {
+    background: white;
 
-            margin-bottom: 40px;
+    padding: 30px;
 
-            color: #111827;
-        }
+    border-radius: 12px;
 
+    border-left: 5px solid #2563eb;
 
-        /* =========================
-           ABOUT SECTION
-        ========================== */
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.05);
+}
 
-        .about {
+.experience-card h3 {
+    color: #2563eb;
 
-            max-width: 850px;
+    font-size: 25px;
 
-            margin: auto;
+    margin-bottom: 5px;
+}
 
-            text-align: center;
+.experience-card h4 {
+    margin-bottom: 18px;
+}
 
-            font-size: 18px;
+.experience-card ul {
+    padding-left: 20px;
 
-            color: #4b5563;
-        }
+    color: #4b5563;
+}
 
+.experience-card li {
+    margin-bottom: 8px;
+}
 
-        /* =========================
-           SKILLS
-        ========================== */
 
-        .skills {
+/* PROJECTS */
 
-            max-width: 950px;
+.projects {
+    max-width: 1150px;
 
-            margin: auto;
+    margin: auto;
 
-            display: flex;
+    display: grid;
 
-            flex-wrap: wrap;
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(300px, 1fr)
+        );
 
-            justify-content: center;
+    gap: 25px;
+}
 
-            gap: 12px;
-        }
+.project-card {
+    background: white;
 
-        .skill {
+    padding: 30px;
 
-            background: white;
+    border-radius: 12px;
 
-            border: 1px solid #dbe3ef;
+    border: 1px solid #e5e7eb;
 
-            padding: 12px 18px;
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.05);
 
-            border-radius: 25px;
+    display: flex;
 
-            font-weight: 600;
+    flex-direction: column;
 
-            box-shadow:
-                0 3px 10px rgba(0,0,0,0.04);
-        }
+    justify-content: space-between;
 
+    transition: 0.3s;
+}
 
-        /* =========================
-           EXPERIENCE
-        ========================== */
+.project-card:hover {
+    transform: translateY(-5px);
+}
 
-        .experience-container {
+.project-card h3 {
+    color: #2563eb;
 
-            max-width: 850px;
+    font-size: 22px;
 
-            margin: auto;
-        }
+    margin-bottom: 12px;
+}
 
-        .experience-card {
+.project-tools {
+    color: #2563eb;
 
-            background: white;
+    font-weight: bold;
 
-            padding: 30px;
+    margin-bottom: 15px;
+}
 
-            border-radius: 12px;
+.project-card p {
+    color: #4b5563;
 
-            border-left: 5px solid #2563eb;
+    margin-bottom: 20px;
+}
 
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.05);
-        }
+.project-btn {
+    color: #2563eb;
 
-        .experience-card h3 {
+    font-weight: bold;
+}
 
-            font-size: 25px;
 
-            color: #2563eb;
+/* WORKFLOW */
 
-            margin-bottom: 5px;
-        }
+.workflow {
+    max-width: 1100px;
 
-        .experience-card h4 {
+    margin: auto;
 
-            font-size: 18px;
+    display: flex;
 
-            margin-bottom: 18px;
+    flex-wrap: wrap;
 
-            color: #374151;
-        }
+    justify-content: center;
 
-        .experience-card ul {
+    align-items: center;
 
-            padding-left: 20px;
+    gap: 10px;
+}
 
-            color: #4b5563;
-        }
+.step {
+    background: white;
 
-        .experience-card li {
+    border: 1px solid #dbe3ef;
 
-            margin-bottom: 8px;
-        }
+    padding: 15px 18px;
 
+    border-radius: 10px;
 
-        /* =========================
-           PROJECTS
-        ========================== */
+    font-weight: bold;
 
-        .projects {
+    text-align: center;
+}
 
-            max-width: 1150px;
+.arrow {
+    color: #2563eb;
 
-            margin: auto;
+    font-size: 20px;
 
-            display: grid;
+    font-weight: bold;
+}
 
-            grid-template-columns:
-                repeat(
-                    auto-fit,
-                    minmax(300px, 1fr)
-                );
 
-            gap: 25px;
-        }
+/* EDUCATION */
 
-        .project-card {
+.education {
+    max-width: 850px;
 
-            background: white;
+    margin: auto;
+}
 
-            padding: 30px;
+.education-card {
+    background: white;
 
-            border-radius: 12px;
+    padding: 25px 30px;
 
-            border: 1px solid #e5e7eb;
+    margin-bottom: 20px;
 
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.05);
+    border-left: 5px solid #2563eb;
 
-            display: flex;
+    border-radius: 8px;
 
-            flex-direction: column;
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.05);
+}
 
-            justify-content: space-between;
+.education-card h3 {
+    color: #2563eb;
 
-            transition: 0.3s;
-        }
+    margin-bottom: 5px;
+}
 
-        .project-card:hover {
+.education-card p {
+    color: #4b5563;
+}
 
-            transform: translateY(-5px);
 
-            box-shadow:
-                0 10px 30px rgba(0,0,0,0.10);
-        }
+/* CONTACT */
 
-        .project-card h3 {
+.contact {
+    text-align: center;
 
-            color: #2563eb;
+    background: #eef4ff;
+}
 
-            font-size: 22px;
+.contact-text {
+    max-width: 750px;
 
-            margin-bottom: 12px;
-        }
+    margin: auto;
 
-        .project-tools {
+    color: #4b5563;
 
-            color: #2563eb;
+    font-size: 18px;
+}
 
-            font-weight: bold;
 
-            margin-bottom: 15px;
-        }
+/* FOOTER */
 
-        .project-card p {
+footer {
+    text-align: center;
 
-            color: #4b5563;
+    padding: 25px;
 
-            margin-bottom: 20px;
-        }
+    background: #111827;
 
-        .project-btn {
+    color: white;
+}
 
-            display: inline-block;
 
-            color: #2563eb;
+/* MOBILE */
 
-            font-weight: bold;
+@media (max-width: 750px) {
 
-            margin-top: auto;
-        }
+    nav {
+        flex-direction: column;
 
-        .project-btn:hover {
+        gap: 15px;
+    }
 
-            color: #1d4ed8;
-        }
+    nav ul {
+        flex-wrap: wrap;
 
+        justify-content: center;
 
-        /* =========================
-           BUSINESS ANALYSIS WORKFLOW
-        ========================== */
+        gap: 15px;
+    }
 
-        .workflow {
+    .hero h1 {
+        font-size: 40px;
+    }
 
-            max-width: 1100px;
+    .hero h2 {
+        font-size: 23px;
+    }
 
-            margin: auto;
+    .profile-photo {
+        width: 160px;
 
-            display: flex;
+        height: 160px;
+    }
 
-            flex-wrap: wrap;
+    section {
+        padding: 55px 5%;
+    }
 
-            justify-content: center;
+}
 
-            align-items: center;
-
-            gap: 10px;
-        }
-
-        .step {
-
-            background: white;
-
-            border: 1px solid #dbe3ef;
-
-            padding: 15px 18px;
-
-            border-radius: 10px;
-
-            font-weight: bold;
-
-            text-align: center;
-
-            box-shadow:
-                0 3px 10px rgba(0,0,0,0.04);
-        }
-
-        .arrow {
-
-            font-size: 20px;
-
-            color: #2563eb;
-
-            font-weight: bold;
-        }
-
-
-        /* =========================
-           EDUCATION
-        ========================== */
-
-        .education {
-
-            max-width: 850px;
-
-            margin: auto;
-        }
-
-        .education-card {
-
-            background: white;
-
-            padding: 25px 30px;
-
-            margin-bottom: 20px;
-
-            border-left: 5px solid #2563eb;
-
-            border-radius: 8px;
-
-            box-shadow:
-                0 5px 15px rgba(0,0,0,0.05);
-        }
-
-        .education-card h3 {
-
-            color: #2563eb;
-
-            margin-bottom: 5px;
-        }
-
-        .education-card p {
-
-            color: #4b5563;
-        }
-
-
-        /* =========================
-           CONTACT
-        ========================== */
-
-        .contact {
-
-            text-align: center;
-
-            background: #eef4ff;
-        }
-
-        .contact-text {
-
-            max-width: 750px;
-
-            margin: auto;
-
-            color: #4b5563;
-
-            font-size: 18px;
-        }
-
-        .contact-links {
-
-            margin-top: 25px;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================== */
-
-        footer {
-
-            text-align: center;
-
-            padding: 25px;
-
-            background: #111827;
-
-            color: white;
-
-            font-size: 14px;
-        }
-
-
-        /* =========================
-           MOBILE RESPONSIVE
-        ========================== */
-
-        @media (max-width: 750px) {
-
-            nav {
-
-                flex-direction: column;
-
-                gap: 15px;
-            }
-
-            nav ul {
-
-                flex-wrap: wrap;
-
-                justify-content: center;
-
-                gap: 15px;
-            }
-
-            .hero h1 {
-
-                font-size: 40px;
-            }
-
-            .hero h2 {
-
-                font-size: 23px;
-            }
-
-            .hero .subtitle {
-
-                font-size: 17px;
-            }
-
-            .profile-photo {
-
-                width: 160px;
-
-                height: 160px;
-            }
-
-            section {
-
-                padding: 55px 5%;
-            }
-
-            section h2 {
-
-                font-size: 29px;
-            }
-
-        }
-
-    </style>
+</style>
 
 </head>
 
@@ -683,183 +551,736 @@
 <body>
 
 
-<!-- =========================================
-     NAVIGATION
-========================================= -->
+<!-- NAVIGATION -->
 
 <nav>
 
-    <h2>Rinita Samanta</h2>
+<h2>Rinita Samanta</h2>
 
-    <ul>
+<ul>
 
-        <li>
-            <a href="#about">About</a>
-        </li>
+<li>
+<a href="#about">About</a>
+</li>
 
-        <li>
-            <a href="#skills">Skills</a>
-        </li>
+<li>
+<a href="#skills">Skills</a>
+</li>
 
-        <li>
-            <a href="#experience">Experience</a>
-        </li>
+<li>
+<a href="#experience">Experience</a>
+</li>
 
-        <li>
-            <a href="#projects">Projects</a>
-        </li>
+<li>
+<a href="#projects">Projects</a>
+</li>
 
-        <li>
-            <a href="#education">Education</a>
-        </li>
+<li>
+<a href="#education">Education</a>
+</li>
 
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
+<li>
+<a href="#contact">Contact</a>
+</li>
 
-    </ul>
+</ul>
 
 </nav>
 
 
 
-<!-- =========================================
-     HERO / FIRST SCREEN
-========================================= -->
+<!-- HERO -->
 
 <section class="hero">
 
-    <div class="hero-content">
+<div class="hero-content">
 
 
-        <!-- YOUR PROFESSIONAL PHOTO -->
-
-        <img
-            src="profile.jpg"
-            alt="Rinita Samanta"
-            class="profile-photo"
-        >
+<img
+src="profile.jpg"
+alt="Rinita Samanta"
+class="profile-photo"
+>
 
 
-        <!-- OPEN TO WORK -->
+<div class="open-work">
 
-        <div class="open-work">
+🟢 Open to Work
 
-            🟢 Open to Work
-
-        </div>
+</div>
 
 
-        <!-- NAME -->
+<h1>
 
-        <h1>
+Rinita Samanta
 
-            Rinita Samanta
-
-        </h1>
+</h1>
 
 
-        <!-- JOB TITLE -->
+<h2>
 
-        <h2>
+Aspiring Business Analyst
 
-            Aspiring Business Analyst
-
-        </h2>
+</h2>
 
 
-        <!-- SUBTITLE -->
+<p class="subtitle">
 
-        <p class="subtitle">
+Business Analytics & Finance | Data Analysis | Business Insights
 
-            Business Analytics & Finance | Data Analysis | Business Insights
-
-        </p>
+</p>
 
 
-        <!-- INTRODUCTION -->
+<p class="hero-description">
 
-        <p class="hero-description">
+MBA student specializing in Business Analytics and Finance
+with a background in Bachelor of Computer Applications.
+I am passionate about analyzing data, understanding business
+problems and transforming data into meaningful insights for
+better decision-making.
 
-            MBA student specializing in Business Analytics and Finance
-            with a background in Bachelor of Computer Applications.
-            I am passionate about analyzing data, understanding
-            business problems and transforming data into meaningful
-            insights for better decision-making.
-
-        </p>
+</p>
 
 
-        <!-- BUTTONS -->
-
-        <div class="buttons">
-
-            <a
-                href="#projects"
-                class="btn"
-            >
-
-                View My Projects
-
-            </a>
+<div class="buttons">
 
 
-            <a
-                href="#contact"
-                class="btn secondary"
-            >
+<a
+href="#projects"
+class="btn"
+>
 
-                Contact Me
+View My Projects
 
-            </a>
+</a>
 
-        </div>
 
-    </div>
+<a
+href="Rinita_Samanta_CV.pdf"
+target="_blank"
+class="btn secondary"
+>
+
+📄 Download CV
+
+</a>
+
+
+<a
+href="#contact"
+class="btn secondary"
+>
+
+Contact Me
+
+</a>
+
+
+</div>
+
+
+</div>
 
 </section>
 
 
 
-<!-- =========================================
-     ABOUT
-========================================= -->
+<!-- ABOUT -->
 
 <section id="about">
 
-    <h2>
+<h2>
 
-        About Me
+About Me
 
-    </h2>
+</h2>
 
 
-    <div class="about">
+<div class="about">
 
-        <p>
+<p>
 
-            I am an MBA student specializing in Business Analytics
-            and Finance with a background in Bachelor of Computer
-            Applications.
+I am an MBA student specializing in Business Analytics
+and Finance with a background in Bachelor of Computer
+Applications.
 
-        </p>
+</p>
 
-        <br>
+<br>
 
-        <p>
+<p>
 
-            I am developing my skills in Business Analysis,
-            Data Analysis, Data Visualization and Business Intelligence.
-            I enjoy working with data to identify trends, understand
-            business challenges and communicate actionable insights.
+I am developing my skills in Business Analysis,
+Data Analysis, Data Visualization and Business Intelligence.
+I enjoy working with data to identify trends, understand
+business challenges and communicate actionable insights.
 
-        </p>
+</p>
 
-    </div>
+</div>
 
 </section>
 
 
 
-<!-- =========================================
-     SKILLS
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>
+
+Skills
+
+</h2>
+
+
+<div class="skills">
+
+
+<div class="skill">
+Business Analysis
+</div>
+
+<div class="skill">
+Data Analysis
+</div>
+
+<div class="skill">
+Microsoft Excel
+</div>
+
+<div class="skill">
+SQL
+</div>
+
+<div class="skill">
+Power BI
+</div>
+
+<div class="skill">
+Tableau
+</div>
+
+<div class="skill">
+Python
+</div>
+
+<div class="skill">
+Pandas
+</div>
+
+<div class="skill">
+Matplotlib
+</div>
+
+<div class="skill">
+Zoho Analytics
+</div>
+
+<div class="skill">
+IBM Cognos
+</div>
+
+<div class="skill">
+KPI Analysis
+</div>
+
+<div class="skill">
+Data Visualization
+</div>
+
+<div class="skill">
+Business Insights
+</div>
+
+<div class="skill">
+Market Research
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<h2>
+
+Internship Experience
+
+</h2>
+
+
+<div class="experience-container">
+
+
+<div class="experience-card">
+
+
+<h3>
+
+Business Analyst Intern
+
+</h3>
+
+
+<h4>
+
+NewsTapOne
+
+</h4>
+
+
+<ul>
+
+<li>
+Worked on business and data-related analytical tasks.
+</li>
+
+<li>
+Analyzed data to identify trends and patterns.
+</li>
+
+<li>
+Prepared summaries and business insights.
+</li>
+
+<li>
+Worked with Excel and analytical tools.
+</li>
+
+<li>
+Developed practical understanding of Business Analysis
+and data-driven decision-making.
+</li>
+
+</ul>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>
+
+Featured Projects
+
+</h2>
+
+
+<div class="projects">
+
+
+<!-- PROJECT 1 -->
+
+<div class="project-card">
+
+
+<div>
+
+<h3>
+
+E-Commerce Sales Analysis
+
+</h3>
+
+
+<div class="project-tools">
+
+Excel | SQL | Power BI
+
+</div>
+
+
+<p>
+
+Analyzed e-commerce sales data to identify sales trends,
+product performance, customer behavior and opportunities
+for business growth.
+
+</p>
+
+</div>
+
+
+<a
+href="https://github.com/rinitasamanta/ecommerce-sales-analysis"
+target="_blank"
+class="project-btn"
+>
+
+View Project →
+
+</a>
+
+
+</div>
+
+
+
+<!-- PROJECT 2 -->
+
+<div class="project-card">
+
+
+<div>
+
+<h3>
+
+Amazon Product Analysis
+
+</h3>
+
+
+<div class="project-tools">
+
+Python | Pandas | Matplotlib
+
+</div>
+
+
+<p>
+
+Analyzed Amazon product data to identify pricing,
+discount, rating and customer engagement patterns.
+
+</p>
+
+</div>
+
+
+<a
+href="https://github.com/rinitasamanta/amazon-product-analysis"
+target="_blank"
+class="project-btn"
+>
+
+View Project →
+
+</a>
+
+
+</div>
+
+
+
+<!-- PROJECT 3 -->
+
+<div class="project-card">
+
+
+<div>
+
+<h3>
+
+Microsoft Stock Price Forecasting
+
+</h3>
+
+
+<div class="project-tools">
+
+Python | Time Series | ARIMA
+
+</div>
+
+
+<p>
+
+Performed time-series analysis and ARIMA forecasting
+on Microsoft stock price data using Python.
+
+</p>
+
+</div>
+
+
+<a
+href="https://github.com/rinitasamanta/microsoft-stock-price-forecasting"
+target="_blank"
+class="project-btn"
+>
+
+View Project →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- BUSINESS ANALYSIS WORKFLOW -->
+
+<section>
+
+<h2>
+
+My Business Analysis Workflow
+
+</h2>
+
+
+<div class="workflow">
+
+
+<div class="step">
+Business Problem
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="step">
+Requirements
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="step">
+Data Collection
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="step">
+Data Cleaning
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="step">
+Data Analysis
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="step">
+Business Insights
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="step">
+Dashboard
+</div>
+
+<div class="arrow">
+→
+</div>
+
+<div class="step">
+Recommendations
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2>
+
+Education
+
+</h2>
+
+
+<div class="education">
+
+
+<div class="education-card">
+
+<h3>
+
+MBA – Business Analytics & Finance
+
+</h3>
+
+<p>
+
+Currently Pursuing
+
+</p>
+
+</div>
+
+
+
+<div class="education-card">
+
+<h3>
+
+Bachelor of Computer Applications (BCA)
+
+</h3>
+
+<p>
+
+Brainware University
+
+</p>
+
+<p>
+
+80% Marks
+
+</p>
+
+</div>
+
+
+
+<div class="education-card">
+
+<h3>
+
+Higher Secondary (HS)
+
+</h3>
+
+<p>
+
+94%
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+
+<h2>
+
+Let's Connect
+
+</h2>
+
+
+<p class="contact-text">
+
+I am currently open to opportunities where I can apply
+my analytical skills, solve real-world business problems
+and contribute to data-driven decision-making.
+
+</p>
+
+
+<h3 style="margin-top:25px;">
+
+🟢 Open to Work
+
+</h3>
+
+
+<p style="margin-top:10px;">
+
+Business Analyst |
+Junior Business Analyst |
+Data Analyst |
+Business Analytics Intern
+
+</p>
+
+
+<div class="buttons">
+
+
+<a
+href="https://www.linkedin.com/in/rinita-samanta-ba6055314/"
+target="_blank"
+class="btn"
+>
+
+LinkedIn
+
+</a>
+
+
+<a
+href="https://github.com/rinitasamanta"
+target="_blank"
+class="btn secondary"
+>
+
+GitHub
+
+</a>
+
+
+<a
+href="Rinita_Samanta_CV.pdf"
+target="_blank"
+class="btn secondary"
+>
+
+📄 View CV
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 Rinita Samanta | Business Analyst Portfolio
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
