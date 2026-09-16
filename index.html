@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description"
-content="Rinita Samanta - Business Analyst Portfolio">
-
-<title>Rinita Samanta | Business Analyst</title>
+<title>Rinita Samanta | Business Analyst Portfolio</title>
 
 <style>
-
 * {
     margin: 0;
     padding: 0;
@@ -21,347 +15,207 @@ content="Rinita Samanta - Business Analyst Portfolio">
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f7f9fc;
-    color: #1f2937;
     line-height: 1.6;
+    color: #172033;
+    background: #f7f9fc;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
-
 /* NAVIGATION */
-
 nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-
     background: white;
-
-    border-bottom: 1px solid #e5e7eb;
-
-    padding: 18px 7%;
-
+    padding: 18px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
-nav h2 {
-    color: #2563eb;
+.logo {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
-
     display: flex;
-
-    gap: 22px;
+    gap: 25px;
 }
 
 nav ul li a {
-    color: #374151;
-
     font-weight: 600;
+    color: #334155;
 }
 
 nav ul li a:hover {
     color: #2563eb;
 }
 
-
 /* HERO */
-
 .hero {
-    min-height: 92vh;
-
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
-    padding: 60px 20px;
-
-    background: linear-gradient(
-        135deg,
-        #eef4ff,
-        #ffffff
-    );
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #eef4ff, #ffffff);
 }
-
-.hero-content {
-    max-width: 850px;
-    margin: auto;
-}
-
-
-/* PROFILE PHOTO */
 
 .profile-photo {
     width: 190px;
     height: 190px;
-
     object-fit: cover;
-
     border-radius: 50%;
-
     border: 6px solid white;
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,0.15);
-
-    margin-bottom: 22px;
-}
-
-
-/* OPEN TO WORK */
-
-.open-work {
-    display: inline-block;
-
-    background: #dcfce7;
-
-    color: #166534;
-
-    padding: 9px 20px;
-
-    border-radius: 30px;
-
-    font-weight: bold;
-
-    margin-bottom: 18px;
-}
-
-
-/* HERO TEXT */
-
-.hero h1 {
-    font-size: 52px;
-
-    color: #111827;
-
-    margin-bottom: 5px;
-}
-
-.hero h2 {
-    font-size: 28px;
-
-    color: #2563eb;
-
-    margin-bottom: 15px;
-}
-
-.subtitle {
-    font-size: 19px;
-
-    color: #4b5563;
-
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     margin-bottom: 20px;
 }
 
-.hero-description {
-    max-width: 720px;
-
-    margin: auto;
-
-    font-size: 17px;
-
-    color: #4b5563;
-
-    margin-bottom: 25px;
+.open-work {
+    display: inline-block;
+    background: #dcfce7;
+    color: #166534;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 10px;
+}
 
-/* BUTTONS */
+.hero h2 {
+    color: #2563eb;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: auto;
+    color: #64748b;
+    font-size: 18px;
+}
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .btn {
     display: inline-block;
-
-    padding: 12px 24px;
-
-    margin: 6px;
-
+    padding: 13px 24px;
     border-radius: 8px;
-
+    margin: 6px;
     font-weight: bold;
-
-    background: #2563eb;
-
-    color: white;
-
     transition: 0.3s;
 }
 
-.btn:hover {
-    background: #1d4ed8;
-
-    transform: translateY(-2px);
+.primary {
+    background: #2563eb;
+    color: white;
 }
 
-.btn.secondary {
+.primary:hover {
+    background: #1d4ed8;
+}
+
+.secondary {
     background: white;
-
     color: #2563eb;
-
     border: 2px solid #2563eb;
 }
 
-.btn.secondary:hover {
-    background: #eef4ff;
+.secondary:hover {
+    background: #eff6ff;
 }
 
-
-/* SECTIONS */
-
+/* GENERAL */
 section {
-    padding: 75px 7%;
+    padding: 80px 8%;
 }
 
-section h2 {
+.section-title {
     text-align: center;
-
-    font-size: 34px;
-
-    margin-bottom: 40px;
-
-    color: #111827;
+    font-size: 36px;
+    margin-bottom: 45px;
 }
 
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
 
 /* ABOUT */
-
 .about {
-    max-width: 850px;
-
-    margin: auto;
-
-    text-align: center;
-
-    font-size: 18px;
-
-    color: #4b5563;
+    background: white;
 }
 
+.about-text {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #475569;
+}
 
 /* SKILLS */
-
-.skills {
-    max-width: 950px;
-
-    margin: auto;
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 12px;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
 }
 
 .skill {
     background: white;
-
-    border: 1px solid #dbe3ef;
-
-    padding: 12px 18px;
-
-    border-radius: 25px;
-
-    font-weight: 600;
-
-    box-shadow:
-        0 3px 10px rgba(0,0,0,0.04);
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
 }
-
 
 /* EXPERIENCE */
-
-.experience-container {
-    max-width: 850px;
-
-    margin: auto;
-}
-
 .experience-card {
     background: white;
-
     padding: 30px;
-
-    border-radius: 12px;
-
     border-left: 5px solid #2563eb;
-
-    box-shadow:
-        0 5px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    max-width: 850px;
+    margin: auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
 }
 
 .experience-card h3 {
     color: #2563eb;
-
-    font-size: 25px;
-
-    margin-bottom: 5px;
-}
-
-.experience-card h4 {
-    margin-bottom: 18px;
-}
-
-.experience-card ul {
-    padding-left: 20px;
-
-    color: #4b5563;
-}
-
-.experience-card li {
     margin-bottom: 8px;
 }
 
-
 /* PROJECTS */
-
 .projects {
-    max-width: 1150px;
+    background: white;
+}
 
-    margin: auto;
-
+.project-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(
-            auto-fit,
-            minmax(300px, 1fr)
-        );
-
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
 }
 
 .project-card {
-    background: white;
-
-    padding: 30px;
-
+    background: #f8fafc;
+    padding: 28px;
     border-radius: 12px;
-
-    border: 1px solid #e5e7eb;
-
-    box-shadow:
-        0 5px 20px rgba(0,0,0,0.05);
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
-
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
 
@@ -371,916 +225,454 @@ section h2 {
 
 .project-card h3 {
     color: #2563eb;
-
-    font-size: 22px;
-
     margin-bottom: 12px;
 }
 
-.project-tools {
-    color: #2563eb;
-
-    font-weight: bold;
-
+.project-card p {
+    color: #64748b;
     margin-bottom: 15px;
 }
 
-.project-card p {
-    color: #4b5563;
-
-    margin-bottom: 20px;
-}
-
-.project-btn {
+.project-link {
     color: #2563eb;
-
     font-weight: bold;
 }
-
 
 /* WORKFLOW */
-
 .workflow {
-    max-width: 1100px;
-
-    margin: auto;
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
 }
 
-.step {
+.workflow-step {
     background: white;
-
-    border: 1px solid #dbe3ef;
-
-    padding: 15px 18px;
-
-    border-radius: 10px;
-
-    font-weight: bold;
-
+    padding: 22px;
     text-align: center;
-}
-
-.arrow {
-    color: #2563eb;
-
-    font-size: 20px;
-
+    border-radius: 10px;
     font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
 }
 
+.workflow-step span {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
 
 /* EDUCATION */
-
-.education {
-    max-width: 850px;
-
-    margin: auto;
-}
-
 .education-card {
     background: white;
-
-    padding: 25px 30px;
-
-    margin-bottom: 20px;
-
-    border-left: 5px solid #2563eb;
-
-    border-radius: 8px;
-
-    box-shadow:
-        0 5px 15px rgba(0,0,0,0.05);
+    padding: 25px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
 }
 
 .education-card h3 {
     color: #2563eb;
-
-    margin-bottom: 5px;
 }
-
-.education-card p {
-    color: #4b5563;
-}
-
 
 /* CONTACT */
-
 .contact {
+    background: #172033;
+    color: white;
     text-align: center;
-
-    background: #eef4ff;
 }
 
-.contact-text {
-    max-width: 750px;
-
-    margin: auto;
-
-    color: #4b5563;
-
-    font-size: 18px;
-}
-
-
-/* FOOTER */
-
-footer {
-    text-align: center;
-
-    padding: 25px;
-
-    background: #111827;
-
+.contact .section-title {
     color: white;
 }
 
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-links a {
+    background: white;
+    color: #172033;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    background: #dbeafe;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #cbd5e1;
+}
 
 /* MOBILE */
-
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 
     nav {
         flex-direction: column;
-
-        gap: 15px;
+        gap: 12px;
     }
 
     nav ul {
+        gap: 12px;
         flex-wrap: wrap;
-
         justify-content: center;
-
-        gap: 15px;
     }
 
     .hero h1 {
-        font-size: 40px;
+        font-size: 42px;
     }
 
     .hero h2 {
-        font-size: 23px;
-    }
-
-    .profile-photo {
-        width: 160px;
-
-        height: 160px;
+        font-size: 24px;
     }
 
     section {
-        padding: 55px 5%;
+        padding: 60px 5%;
     }
-
 }
-
 </style>
-
 </head>
-
 
 <body>
 
-
 <!-- NAVIGATION -->
-
 <nav>
+    <div class="logo">Rinita Samanta</div>
 
-<h2>Rinita Samanta</h2>
-
-<ul>
-
-<li>
-<a href="#about">About</a>
-</li>
-
-<li>
-<a href="#skills">Skills</a>
-</li>
-
-<li>
-<a href="#experience">Experience</a>
-</li>
-
-<li>
-<a href="#projects">Projects</a>
-</li>
-
-<li>
-<a href="#education">Education</a>
-</li>
-
-<li>
-<a href="#contact">Contact</a>
-</li>
-
-</ul>
-
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </nav>
 
-
-
 <!-- HERO -->
-
 <section class="hero">
 
-<div class="hero-content">
+    <div>
 
+        <img src="Profile.png" alt="Rinita Samanta" class="profile-photo">
 
-<img
-src="profile.jpg"
-alt="Rinita Samanta"
-class="profile-photo"
->
+        <div>
+            <span class="open-work">🟢 Open to Work</span>
+        </div>
 
+        <h1>Rinita Samanta</h1>
 
-<div class="open-work">
+        <h2>Aspiring Business Analyst</h2>
 
-🟢 Open to Work
+        <p>
+            Business Analytics & Finance student with a BCA background,
+            interested in data analysis, business insights, market research,
+            and data-driven decision making.
+        </p>
 
-</div>
+        <div class="buttons">
+            <a href="#projects" class="btn primary">View My Projects</a>
 
+            <a href="Rinita_Samanta_Resume.pdf"
+               target="_blank"
+               class="btn secondary">
+                📄 View CV
+            </a>
 
-<h1>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
 
-Rinita Samanta
-
-</h1>
-
-
-<h2>
-
-Aspiring Business Analyst
-
-</h2>
-
-
-<p class="subtitle">
-
-Business Analytics & Finance | Data Analysis | Business Insights
-
-</p>
-
-
-<p class="hero-description">
-
-MBA student specializing in Business Analytics and Finance
-with a background in Bachelor of Computer Applications.
-I am passionate about analyzing data, understanding business
-problems and transforming data into meaningful insights for
-better decision-making.
-
-</p>
-
-
-<div class="buttons">
-
-
-<a
-href="#projects"
-class="btn"
->
-
-View My Projects
-
-</a>
-
-
-<a
-href="Rinita_Samanta_CV.pdf"
-target="_blank"
-class="btn secondary"
->
-
-📄 Download CV
-
-</a>
-
-
-<a
-href="#contact"
-class="btn secondary"
->
-
-Contact Me
-
-</a>
-
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
-
-
 
 <!-- ABOUT -->
+<section id="about" class="about">
 
-<section id="about">
+    <div class="container">
 
-<h2>
+        <h2 class="section-title">About Me</h2>
 
-About Me
+        <p class="about-text">
+            I am currently pursuing an MBA in Business Analytics & Finance
+            after completing my BCA from Brainware University. I am developing
+            practical skills in Business Analysis, Data Analysis, Excel, SQL,
+            Power BI, Tableau and Python. My goal is to use data to understand
+            business problems and support better business decisions.
+        </p>
 
-</h2>
-
-
-<div class="about">
-
-<p>
-
-I am an MBA student specializing in Business Analytics
-and Finance with a background in Bachelor of Computer
-Applications.
-
-</p>
-
-<br>
-
-<p>
-
-I am developing my skills in Business Analysis,
-Data Analysis, Data Visualization and Business Intelligence.
-I enjoy working with data to identify trends, understand
-business challenges and communicate actionable insights.
-
-</p>
-
-</div>
+    </div>
 
 </section>
-
-
 
 <!-- SKILLS -->
-
 <section id="skills">
 
-<h2>
+    <div class="container">
 
-Skills
+        <h2 class="section-title">Skills</h2>
 
-</h2>
+        <div class="skills-grid">
 
+            <div class="skill">Business Analysis</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Excel</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">Tableau</div>
+            <div class="skill">Python</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">Matplotlib</div>
+            <div class="skill">Zoho Analytics</div>
+            <div class="skill">IBM Cognos</div>
+            <div class="skill">KPI Analysis</div>
+            <div class="skill">Data Visualization</div>
+            <div class="skill">Business Insights</div>
+            <div class="skill">Market Research</div>
 
-<div class="skills">
+        </div>
 
-
-<div class="skill">
-Business Analysis
-</div>
-
-<div class="skill">
-Data Analysis
-</div>
-
-<div class="skill">
-Microsoft Excel
-</div>
-
-<div class="skill">
-SQL
-</div>
-
-<div class="skill">
-Power BI
-</div>
-
-<div class="skill">
-Tableau
-</div>
-
-<div class="skill">
-Python
-</div>
-
-<div class="skill">
-Pandas
-</div>
-
-<div class="skill">
-Matplotlib
-</div>
-
-<div class="skill">
-Zoho Analytics
-</div>
-
-<div class="skill">
-IBM Cognos
-</div>
-
-<div class="skill">
-KPI Analysis
-</div>
-
-<div class="skill">
-Data Visualization
-</div>
-
-<div class="skill">
-Business Insights
-</div>
-
-<div class="skill">
-Market Research
-</div>
-
-
-</div>
+    </div>
 
 </section>
-
-
 
 <!-- EXPERIENCE -->
-
 <section id="experience">
 
-<h2>
+    <div class="container">
 
-Internship Experience
+        <h2 class="section-title">Internship Experience</h2>
 
-</h2>
+        <div class="experience-card">
 
+            <h3>Business Analyst Intern</h3>
 
-<div class="experience-container">
+            <p><strong>NewsTapOne</strong></p>
 
+            <br>
 
-<div class="experience-card">
+            <p>
+                Worked on business and data analytics activities, developed
+                analytical skills, explored business information and supported
+                data-driven understanding of business problems.
+            </p>
 
+        </div>
 
-<h3>
-
-Business Analyst Intern
-
-</h3>
-
-
-<h4>
-
-NewsTapOne
-
-</h4>
-
-
-<ul>
-
-<li>
-Worked on business and data-related analytical tasks.
-</li>
-
-<li>
-Analyzed data to identify trends and patterns.
-</li>
-
-<li>
-Prepared summaries and business insights.
-</li>
-
-<li>
-Worked with Excel and analytical tools.
-</li>
-
-<li>
-Developed practical understanding of Business Analysis
-and data-driven decision-making.
-</li>
-
-</ul>
-
-
-</div>
-
-</div>
+    </div>
 
 </section>
-
-
 
 <!-- PROJECTS -->
+<section id="projects" class="projects">
 
-<section id="projects">
+    <div class="container">
 
-<h2>
+        <h2 class="section-title">Featured Projects</h2>
 
-Featured Projects
+        <div class="project-grid">
 
-</h2>
+            <div class="project-card">
 
+                <h3>E-Commerce Sales Analysis</h3>
 
-<div class="projects">
+                <p>
+                    Analyzed e-commerce sales data to identify sales trends,
+                    business performance indicators and opportunities for
+                    improving revenue.
+                </p>
 
+                <p><strong>Tools:</strong> Excel | SQL | Power BI</p>
 
-<!-- PROJECT 1 -->
+                <a
+                    href="https://github.com/rinitasamanta/ecommerce-sales-analysis"
+                    target="_blank"
+                    class="project-link">
+                    View Project →
+                </a>
 
-<div class="project-card">
+            </div>
 
 
-<div>
+            <div class="project-card">
 
-<h3>
+                <h3>Amazon Product Analysis</h3>
 
-E-Commerce Sales Analysis
+                <p>
+                    Explored Amazon product data using Python to understand
+                    product pricing, ratings and relationships between
+                    different product attributes.
+                </p>
 
-</h3>
+                <p><strong>Tools:</strong> Python | Pandas | Matplotlib</p>
 
+                <a
+                    href="https://github.com/rinitasamanta/amazon-product-analysis"
+                    target="_blank"
+                    class="project-link">
+                    View Project →
+                </a>
 
-<div class="project-tools">
+            </div>
 
-Excel | SQL | Power BI
 
-</div>
+            <div class="project-card">
 
+                <h3>Microsoft Stock Price Forecasting</h3>
 
-<p>
+                <p>
+                    Applied time-series analysis to Microsoft stock price data
+                    and explored ARIMA-based forecasting techniques.
+                </p>
 
-Analyzed e-commerce sales data to identify sales trends,
-product performance, customer behavior and opportunities
-for business growth.
+                <p><strong>Tools:</strong> Python | Time Series | ARIMA</p>
 
-</p>
+                <a
+                    href="https://github.com/rinitasamanta/microsoft-stock-price-forecasting"
+                    target="_blank"
+                    class="project-link">
+                    View Project →
+                </a>
 
-</div>
+            </div>
 
+        </div>
 
-<a
-href="https://github.com/rinitasamanta/ecommerce-sales-analysis"
-target="_blank"
-class="project-btn"
->
-
-View Project →
-
-</a>
-
-
-</div>
-
-
-
-<!-- PROJECT 2 -->
-
-<div class="project-card">
-
-
-<div>
-
-<h3>
-
-Amazon Product Analysis
-
-</h3>
-
-
-<div class="project-tools">
-
-Python | Pandas | Matplotlib
-
-</div>
-
-
-<p>
-
-Analyzed Amazon product data to identify pricing,
-discount, rating and customer engagement patterns.
-
-</p>
-
-</div>
-
-
-<a
-href="https://github.com/rinitasamanta/amazon-product-analysis"
-target="_blank"
-class="project-btn"
->
-
-View Project →
-
-</a>
-
-
-</div>
-
-
-
-<!-- PROJECT 3 -->
-
-<div class="project-card">
-
-
-<div>
-
-<h3>
-
-Microsoft Stock Price Forecasting
-
-</h3>
-
-
-<div class="project-tools">
-
-Python | Time Series | ARIMA
-
-</div>
-
-
-<p>
-
-Performed time-series analysis and ARIMA forecasting
-on Microsoft stock price data using Python.
-
-</p>
-
-</div>
-
-
-<a
-href="https://github.com/rinitasamanta/microsoft-stock-price-forecasting"
-target="_blank"
-class="project-btn"
->
-
-View Project →
-
-</a>
-
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
-
-
 
 <!-- BUSINESS ANALYSIS WORKFLOW -->
-
 <section>
 
-<h2>
+    <div class="container">
 
-My Business Analysis Workflow
+        <h2 class="section-title">Business Analysis Workflow</h2>
 
-</h2>
+        <div class="workflow">
 
+            <div class="workflow-step">
+                <span>01</span>
+                Understand Business Problem
+            </div>
 
-<div class="workflow">
+            <div class="workflow-step">
+                <span>02</span>
+                Collect Data
+            </div>
 
+            <div class="workflow-step">
+                <span>03</span>
+                Clean & Prepare Data
+            </div>
 
-<div class="step">
-Business Problem
-</div>
+            <div class="workflow-step">
+                <span>04</span>
+                Analyze Data
+            </div>
 
-<div class="arrow">
-→
-</div>
+            <div class="workflow-step">
+                <span>05</span>
+                Visualize Insights
+            </div>
 
-<div class="step">
-Requirements
-</div>
+            <div class="workflow-step">
+                <span>06</span>
+                Recommend Business Actions
+            </div>
 
-<div class="arrow">
-→
-</div>
+        </div>
 
-<div class="step">
-Data Collection
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="step">
-Data Cleaning
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="step">
-Data Analysis
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="step">
-Business Insights
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="step">
-Dashboard
-</div>
-
-<div class="arrow">
-→
-</div>
-
-<div class="step">
-Recommendations
-</div>
-
-
-</div>
+    </div>
 
 </section>
-
-
 
 <!-- EDUCATION -->
-
 <section id="education">
 
-<h2>
+    <div class="container">
 
-Education
+        <h2 class="section-title">Education</h2>
 
-</h2>
+        <div class="education-card">
 
+            <h3>MBA – Business Analytics & Finance</h3>
 
-<div class="education">
+            <p>Currently Pursuing</p>
 
+        </div>
 
-<div class="education-card">
+        <div class="education-card">
 
-<h3>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
 
-MBA – Business Analytics & Finance
+            <p>Brainware University — 80%</p>
 
-</h3>
+        </div>
 
-<p>
+        <div class="education-card">
 
-Currently Pursuing
+            <h3>Higher Secondary</h3>
 
-</p>
+            <p>94%</p>
 
-</div>
+        </div>
 
-
-
-<div class="education-card">
-
-<h3>
-
-Bachelor of Computer Applications (BCA)
-
-</h3>
-
-<p>
-
-Brainware University
-
-</p>
-
-<p>
-
-80% Marks
-
-</p>
-
-</div>
-
-
-
-<div class="education-card">
-
-<h3>
-
-Higher Secondary (HS)
-
-</h3>
-
-<p>
-
-94%
-
-</p>
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
-
-
 
 <!-- CONTACT -->
-
 <section id="contact" class="contact">
 
+    <div class="container">
 
-<h2>
+        <h2 class="section-title">Let's Connect</h2>
 
-Let's Connect
+        <p style="margin-bottom: 25px;">
+            I am open to Business Analyst, Data Analyst and Market Research
+            opportunities.
+        </p>
 
-</h2>
+        <div class="contact-links">
 
+            <a
+                href="https://www.linkedin.com/in/rinita-samanta-ba6055314/"
+                target="_blank">
+                LinkedIn
+            </a>
 
-<p class="contact-text">
+            <a
+                href="https://github.com/rinitasamanta"
+                target="_blank">
+                GitHub
+            </a>
 
-I am currently open to opportunities where I can apply
-my analytical skills, solve real-world business problems
-and contribute to data-driven decision-making.
+            <a
+                href="Rinita_Samanta_Resume.pdf"
+                target="_blank">
+                📄 View CV
+            </a>
 
-</p>
+        </div>
 
-
-<h3 style="margin-top:25px;">
-
-🟢 Open to Work
-
-</h3>
-
-
-<p style="margin-top:10px;">
-
-Business Analyst |
-Junior Business Analyst |
-Data Analyst |
-Business Analytics Intern
-
-</p>
-
-
-<div class="buttons">
-
-
-<a
-href="https://www.linkedin.com/in/rinita-samanta-ba6055314/"
-target="_blank"
-class="btn"
->
-
-LinkedIn
-
-</a>
-
-
-<a
-href="https://github.com/rinitasamanta"
-target="_blank"
-class="btn secondary"
->
-
-GitHub
-
-</a>
-
-
-<a
-href="Rinita_Samanta_CV.pdf"
-target="_blank"
-class="btn secondary"
->
-
-📄 View CV
-
-</a>
-
-
-</div>
-
+    </div>
 
 </section>
 
-
-
 <!-- FOOTER -->
-
 <footer>
 
-<p>
-
-© 2026 Rinita Samanta | Business Analyst Portfolio
-
-</p>
+    <p>© 2026 Rinita Samanta | Business Analyst Portfolio</p>
 
 </footer>
 
-
 </body>
-
 </html>
